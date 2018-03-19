@@ -24,6 +24,7 @@ module.exports.login = function(req, res) {
 
   passport.authenticate('local', function(err, user, info){
     var token;
+    console.log('in login');
 
     // If Passport throws/catches an error
     if (err) {
